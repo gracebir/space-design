@@ -84,7 +84,15 @@
         <section class="flow" id="interactive-elements">
             <h2 class="number-title"><span>03</span>Interactive elements</h2>
             <!-- navigation -->
-            <div></div>
+            <div>
+                <nav>
+                    <ul class="primary-navigation underline-indicators flex">
+                        <li class="active"><a class="uppercase text-white letter-space-2" href="#"><span>01</span>Active</a></li>
+                        <li><a class="uppercase text-white letter-space-2" href="#"><span>02</span>Hovered</a></li>
+                        <li><a class="uppercase text-white letter-space-2" href="#"><span>03</span>Idle</a></li>
+                    </ul>
+                </nav>
+            </div>
 
             <div class="flex">
                 <div style="margin-top: 5rem;">
@@ -93,7 +101,11 @@
                 </div>
                 <div style="margin-bottom: 50vh;">
                     <!-- Tabs -->
-
+                    <div class="tab-list underline-indicators flex">
+                        <button aria-selected="true" class="uppercase text-accent letter-spacing-2 bg-dark ff-sans-cond">Moon</button>
+                        <button aria-selected="false" class="uppercase text-accent letter-spacing-2 bg-dark ff-sans-cond">Mars</button>
+                        <button aria-selected="false" class="uppercase text-accent letter-spacing-2 bg-dark ff-sans-cond">Europa</button>
+                    </div>
                     <!-- Dots -->
 
                     <!-- Numbers -->
