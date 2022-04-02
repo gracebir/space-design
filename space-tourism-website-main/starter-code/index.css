@@ -166,7 +166,7 @@ select{
    }
    
    .grid-container--home{
-      padding-bottom: (6rem, 20vh);
+      padding-bottom: max(6rem, 10vh);
       align-items: end;
    }
 }
@@ -380,3 +380,29 @@ p{
 .border-indicators > *:focus{
    border-color: hsl(var(--clr-white)/.5);
  }
+
+ /* ----------------- */
+/* page specific background  */
+/* ----------------- */
+
+body{
+   background-size: cover;
+   background-position: bottom center;
+}
+
+.home{
+   background-image: url(./assets/home/background-home-mobile.jpg);
+}
+
+@media (min-width: 35em){
+   .home{
+      background-image: url(./assets/home/background-home-tablet.jpg);
+   }
+}
+
+@media (min-width: 45em){
+   .home{
+      background-image: url(./assets/home/background-home-desktop.jpg);
+   }
+}
+
